@@ -1,77 +1,142 @@
-# 📜 Кодекс поведения участника
+# 📜 Code of Conduct
 
-## Наше обязательство
+## 🌍 Our Commitment
 
-Мы как участники, контрибьюторы и мейнтейнеры обязуемся сделать участие в нашем сообществе свободным от харассмента для всех — независимо от возраста, телосложения, видимой или невидимой инвалидности, этнической принадлежности, гендерной идентичности и самовыражения, уровня опыта, образования, социально-экономического статуса, национальности, внешнего вида, расы, религии или сексуальной идентичности и ориентации.
+We, as participants, contributors, and maintainers, are committed to making participation in our community a harassment-free experience for everyone.
 
-Мы обязуемся действовать и взаимодействовать так, чтобы способствовать открытому, гостеприимному, разнообразному, инклюзивному и здоровому сообществу.
+This applies regardless of age, body size, visible or invisible disability, ethnicity, gender identity and expression, level of experience, education, socio-economic status, nationality, appearance, race, religion, or sexual identity and orientation.
 
-## Наши стандарты
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
 
-Примеры поведения, которое создаёт позитивную атмосферу:
+---
 
-- Демонстрация эмпатии и доброты к другим людям
-- Уважение разных мнений, точек зрения и опыта
-- Конструктивная обратная связь — давать и принимать
-- Принятие ответственности и извинения перед теми, кого затронули наши ошибки, и обучение на этом опыте
-- Фокус на том, что лучше не только для нас лично, но для сообщества в целом
+## 🤝 Our Standards
 
-Примеры неприемлемого поведения:
+### ✅ Examples of positive behavior
 
-- Использование сексуализированной лексики или образов, а также сексуальное внимание любого рода
-- Троллинг, оскорбительные комментарии, личные или политические нападки
-- Публичный или приватный харассмент
-- Публикация чужой приватной информации (физический или email-адрес) без явного разрешения
-- Любое другое поведение, которое разумно может быть сочтено неуместным в профессиональной среде
+* Showing empathy and kindness toward others
+* Respecting differing opinions, perspectives, and experiences
+* Giving and gracefully accepting constructive feedback
+* Taking responsibility for mistakes, apologizing, and learning from them
+* Focusing on what benefits the community as a whole
 
-## Обязанности
+### 🚫 Examples of unacceptable behavior
 
-Мейнтейнеры проекта отвечают за разъяснение и применение стандартов приемлемого поведения и предпринимают соответствующие справедливые корректирующие меры в ответ на любое поведение, которое они считают неуместным, угрожающим, оскорбительным или вредоносным.
+* The use of sexualized language or imagery, or any form of sexual attention
+* Trolling, insulting or derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others’ private information (such as physical or email addresses) without explicit permission
+* Any behavior that would be considered inappropriate in a professional setting
 
-Мейнтейнеры имеют право и обязаны удалять, редактировать или отклонять комментарии, коммиты, код, правки вики, issues и другие вклады, которые не соответствуют этому Кодексу поведения.
+---
 
-## Область применения
+## 🛠 Responsibilities
 
-Этот Кодекс поведения применяется во всех пространствах сообщества, а также когда человек официально представляет сообщество в публичном пространстве. Примеры представления — использование официального email-адреса, посты в соцсетях с официального аккаунта, выступление на онлайн- или офлайн-мероприятии в качестве назначенного представителя.
+Maintainers are responsible for:
 
-## Применение
+* Clarifying and enforcing acceptable behavior standards
+* Taking appropriate and fair corrective action in response to violations
 
-О случаях оскорбительного, харассмента или иного неприемлемого поведения можно сообщить мейнтейнерам через [Issues](../../issues) или напрямую владельцу репозитория. Все жалобы будут рассмотрены и расследованы оперативно и справедливо.
+Maintainers have the right to:
 
-Все мейнтейнеры обязаны уважать конфиденциальность и безопасность тех, кто сообщил о любом инциденте.
+* Remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that do not align with this Code of Conduct
 
-## Принципы применения
+---
 
-Мейнтейнеры руководствуются следующими принципами при определении последствий любого действия, которое они сочли нарушающим этот Кодекс поведения:
+## 🌐 Scope
 
-### 1. Замечание
+This Code of Conduct applies:
 
-**Влияние сообщества**: Использование неподобающего языка или другое поведение, признанное непрофессиональным или нежелательным в сообществе.
+* Within all community spaces
+* When an individual is officially representing the community in public spaces
 
-**Последствие**: Приватное письменное предупреждение от мейнтейнеров с пояснением природы нарушения и объяснением, почему поведение было неуместным. Может быть запрошено публичное извинение.
+Examples include:
 
-### 2. Предупреждение
+* Using an official email address
+* Posting from official social media accounts
+* Acting as a representative at events
 
-**Влияние сообщества**: Нарушение через единичный инцидент или серию действий.
+---
 
-**Последствие**: Предупреждение с последствиями для продолжения поведения. Никакого взаимодействия с вовлечёнными людьми, включая нежелательное взаимодействие с теми, кто применяет Кодекс поведения, в течение указанного периода времени.
+## 📣 Enforcement
 
-### 3. Временный бан
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported:
 
-**Влияние сообщества**: Серьёзное нарушение стандартов сообщества, включая постоянное неуместное поведение.
+* Via Issues
+* Or directly to the repository owner
 
-**Последствие**: Временный запрет любого взаимодействия или публичной коммуникации с сообществом на указанный период времени.
+All reports will be:
 
-### 4. Постоянный бан
+* Reviewed promptly
+* Handled fairly
+* Treated with confidentiality and respect for the reporter’s safety
 
-**Влияние сообщества**: Демонстрация шаблона нарушения стандартов сообщества, включая постоянное неуместное поведение, харассмент отдельного человека или агрессию по отношению к группам людей или их унижение.
+---
 
-**Последствие**: Постоянный запрет любого вида публичного взаимодействия в сообществе.
+## ⚖️ Enforcement Guidelines
 
-## Атрибуция
+Maintainers will follow these guidelines when determining consequences:
 
-Этот Кодекс поведения адаптирован из [Contributor Covenant](https://www.contributor-covenant.org), версия 2.1, доступна по адресу https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.
+### 1. Correction
 
-Принципы применения вдохновлены [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity).
+**Community Impact:**
+Use of inappropriate language or other behavior deemed unprofessional or unwelcome.
 
-Ответы на распространённые вопросы об этом кодексе: https://www.contributor-covenant.org/faq. Переводы доступны по адресу https://www.contributor-covenant.org/translations.
+**Consequence:**
+
+* A private written warning
+* Explanation of why the behavior was inappropriate
+* A public apology may be requested
+
+---
+
+### 2. Warning
+
+**Community Impact:**
+A violation through a single incident or repeated actions.
+
+**Consequence:**
+
+* A formal warning
+* Temporary restriction from interacting with involved parties
+
+---
+
+### 3. Temporary Ban
+
+**Community Impact:**
+Serious or repeated violations of community standards.
+
+**Consequence:**
+
+* Temporary ban from any interaction or public communication within the community
+
+---
+
+### 4. Permanent Ban
+
+**Community Impact:**
+A pattern of violations, harassment, or aggressive behavior toward individuals or groups.
+
+**Consequence:**
+
+* Permanent ban from all community participation
+
+---
+
+## 📚 Attribution
+
+This Code of Conduct is adapted from:
+
+* Contributor Covenant v2.1
+  https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+
+Enforcement guidelines are inspired by:
+
+* Mozilla’s Code of Conduct Enforcement Ladder
+  https://github.com/mozilla/diversity
+
+Additional resources:
+
+* FAQ: https://www.contributor-covenant.org/faq
+* Translations: https://www.contributor-covenant.org/translations
