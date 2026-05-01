@@ -1,0 +1,29 @@
+{
+  "name": "ecofood-share",
+  "version": "0.4.2",
+  "description": "Open-source платформа против пищевых отходов",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "format": "prettier --write \"**/*.{html,css,js,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,md}\"",
+    "lint:html": "html-validate index.html src/index.html"
+  },
+  "devDependencies": {
+    "html-validate": "^8.18.2",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.4"
+  },
+  "keywords": [
+    "food-waste",
+    "open-source",
+    "sustainability",
+    "ecology",
+    "community"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Su1tan4ik/ecofood.git"
+  }
+}
