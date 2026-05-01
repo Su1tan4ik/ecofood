@@ -94,7 +94,6 @@ This ensures maximum flexibility and encourages global adoption without legal fr
 
 - **Sultan** — Project Lead & Backend/Database Developer  
   - Project architecture  
-  - MongoDB integration  
   - Core logic  
 
 - **Alua** — Frontend Engineer  
@@ -108,6 +107,6 @@ This ensures maximum flexibility and encourages global adoption without legal fr
   - Problem/solution validation  
 
 - **Merey** — QA & Community Manager  
-  - Testing  
-  - GitHub templates  
+  - Testing another projects(DPG Registry) documentation
+  - Getting GitHub templates
   - Managing `CONTRIBUTING.md` & `CODE_OF_CONDUCT.md`
