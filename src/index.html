@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EcoFood Share — Делись едой, спасай планету</title>
+<meta name="description" content="Открытая платформа, помогающая кафе, магазинам и людям делиться лишней едой с теми, кому она нужна." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============= NAV ============= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <svg viewBox="0 0 32 32" fill="none">
+        <path d="M16 4 C 22 4 28 10 28 16 C 28 22 22 28 16 28 C 12 28 8 24 8 20 C 8 16 12 14 16 14 C 20 14 22 12 22 10" stroke="#1F4031" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="22" cy="10" r="2" fill="#D7572C"/>
+      </svg>
+      Eco<em>Food</em>Share
+    </a>
+    <ul class="nav-links">
+      <li><a href="#available">Доступная еда</a></li>
+      <li><a href="#how">Как это работает</a></li>
+      <li><a href="#map">Карта</a></li>
+      <li><a href="#impact">Эффект</a></li>
+    </ul>
+    <button class="btn-share" onclick="document.getElementById('share').scrollIntoView({behavior:'smooth'})">Поделиться едой</button>
+  </div>
+</nav>
+
+<!-- ============= HERO ============= -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Сейчас в сети — 1 247 человек</div>
+      <h1>
+        Делись<br/>едой<span class="leaf">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M3 21 C 6 13 12 8 21 5 C 19 13 14 19 7 21 C 6 18 8 14 14 11" stroke="#D7572C" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span><br/>
+        <span class="it">спасай планету.</span>
+      </h1>
+    </div>
+    <div class="hero-side">
+      <p class="hero-lede">
+        Каждый третий продукт в мире <strong>выбрасывается</strong>. Кафе, магазины и обычные люди объединяются здесь, чтобы передать лишнюю еду тем, кому она нужна — бесплатно или почти.
+      </p>
+      <div class="hero-cta">
+        <a href="#available" class="btn btn-primary">
+          Найти еду рядом
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#share" class="btn btn-secondary">Поделиться лишним</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= TICKER STATS ============= -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <div class="stat">
+      <div class="stat-num" data-count="48312">0<span class="unit"> порций</span></div>
+      <div class="stat-label">Спасено от мусорки</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="1893">0<span class="unit"> кг</span></div>
+      <div class="stat-label">CO₂ не попало в воздух</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="312">0</div>
+      <div class="stat-label">Заведений-партнёров</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="14782">0</div>
+      <div class="stat-label">Активных участников</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============= AVAILABLE NOW ============= -->
+<section id="available">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">01 — Доступно сейчас</div>
+        <h2>Свежее <em>сегодня</em>,<br/>и почти бесплатно.</h2>
+      </div>
+      <p class="desc">Объявления обновляются каждые 5 минут. Большинство — бесплатно, иногда заведения просят символическую сумму, чтобы покрыть упаковку.</p>
+    </div>
+
+    <div class="filter-bar reveal">
+      <button class="chip active" data-filter="all">Все <span class="count" id="count-all">0</span></button>
+      <button class="chip" data-filter="bakery">Хлеб и выпечка</button>
+      <button class="chip" data-filter="meals">Готовые блюда</button>
+      <button class="chip" data-filter="produce">Овощи и фрукты</button>
+      <button class="chip" data-filter="dairy">Молочка</button>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Поиск по названию или району..." />
+      </div>
+    </div>
+
+    <div class="listings reveal" id="listings"></div>
+  </div>
+</section>
+
+<!-- ============= HOW IT WORKS ============= -->
+<section class="how-section" id="how">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">02 — Как это работает</div>
+        <h2>Три шага. <em>Без бюрократии.</em></h2>
+      </div>
+      <p class="desc">Мы не зарабатываем на пользователях и не берём комиссий. Платформа — open-source, и любой может запустить свой инстанс.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01 / Поделись</div>
+        <h3>Загрузи <em>лишнее</em></h3>
+        <p>Фото, краткое описание, район и время, до которого еда должна быть забрана. Пять полей, тридцать секунд.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02 / Найди</div>
+        <h3>Выбери <em>рядом</em></h3>
+        <p>Карта показывает, что доступно в радиусе пешей прогулки. Фильтры по типу еды, цене и срочности.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03 / Забери</div>
+        <h3>Договорись и <em>забери</em></h3>
+        <p>Чат внутри платформы. Подтверждение получения — и +1 порция спасённой еды в твоей статистике.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= MAP ============= -->
+<section id="map">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">03 — Карта города</div>
+        <h2>Точки с <em>едой</em> рядом.</h2>
+      </div>
+      <p class="desc">Наведи курсор на маркер — увидишь, что отдают и до какого времени. Кликни, чтобы открыть детали.</p>
+    </div>
+
+    <div class="map-wrap reveal">
+      <div class="map-overlay"><span class="live"></span> Live · 12 точек активны</div>
+      <div class="map-tooltip" id="map-tooltip"></div>
+      <svg class="map-svg" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+        <!-- abstract city -->
+        <defs>
+          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#DDD3BF" stroke-width="0.5"/>
+          </pattern>
+          <linearGradient id="riverGrad" x1="0" x2="1">
+            <stop offset="0" stop-color="#B8C9A8" stop-opacity="0.4"/>
+            <stop offset="1" stop-color="#B8C9A8" stop-opacity="0.1"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="600" fill="#FAF6EC"/>
+        <rect width="1200" height="600" fill="url(#grid)"/>
+        <!-- river -->
+        <path d="M 0 380 C 200 360 400 420 600 380 C 800 340 1000 400 1200 360 L 1200 410 C 1000 450 800 390 600 430 C 400 470 200 410 0 430 Z" fill="url(#riverGrad)"/>
+        <!-- parks -->
+        <ellipse cx="240" cy="180" rx="80" ry="48" fill="#B8C9A8" opacity="0.4"/>
+        <ellipse cx="900" cy="220" rx="100" ry="60" fill="#B8C9A8" opacity="0.4"/>
+        <ellipse cx="780" cy="500" rx="70" ry="40" fill="#B8C9A8" opacity="0.4"/>
+        <!-- streets -->
+        <g stroke="#DDD3BF" stroke-width="1.5" fill="none">
+          <path d="M 0 100 L 1200 140"/>
+          <path d="M 0 240 L 1200 260"/>
+          <path d="M 0 500 L 1200 520"/>
+          <path d="M 200 0 L 220 600"/>
+          <path d="M 500 0 L 540 600"/>
+          <path d="M 850 0 L 880 600"/>
+        </g>
+        <!-- pins -->
+        <g class="map-pin" data-name="Пекарня «Колосок»" data-info="3 батона хлеба · до 21:00" transform="translate(180, 200)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+        <g class="map-pin moss" data-name="Кафе Veranda" data-info="6 порций салата · до 19:30" transform="translate(420, 280)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+        <g class="map-pin amber" data-name="Магазин «Свежее»" data-info="ящик помидоров · до 22:00" transform="translate(680, 180)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+        <g class="map-pin" data-name="Кофейня Drip" data-info="круассаны · до 20:00" transform="translate(800, 340)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+        <g class="map-pin moss" data-name="Анна (частное)" data-info="борщ домашний · до 23:00" transform="translate(950, 460)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+        <g class="map-pin amber" data-name="Ресторан Mira" data-info="2 пиццы · до 22:30" transform="translate(560, 460)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+        <g class="map-pin" data-name="Зерновая лавка" data-info="киноа, гречка · до завтра" transform="translate(320, 420)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+        <g class="map-pin moss" data-name="Foodtruck Tacos" data-info="4 порции · до 18:30" transform="translate(1050, 220)">
+          <circle class="pin-pulse" r="14"/>
+          <circle class="pin-circle" r="9"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============= SHARE FORM ============= -->
+<section class="share-section" id="share">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">04 — Поделиться</div>
+        <h2>Есть <em>лишнее</em>?<br/>Опубликуй за 30 секунд.</h2>
+      </div>
+      <p class="desc">Объявление появится в ленте сразу же. Все данные хранятся локально, в этом демо ничего не отправляется на сервер.</p>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-intro reveal">
+        <h3>Несколько <em>правил</em>, чтобы всем было хорошо.</h3>
+        <p>Мы не контролируем заведения, но придерживаемся принципов: безопасность, честность и уважение. Если еда испорчена — не выкладывай. Если опаздываешь — предупреди.</p>
+        <ul class="form-tips">
+          <li><strong>1.</strong><div>Проверь срок годности. Если меньше 24 часов — добавь тег «срочно».</div></li>
+          <li><strong>2.</strong><div>Опиши состояние честно: открыто/закрыто, разогревалось ли.</div></li>
+          <li><strong>3.</strong><div>Укажи аллергены, если знаешь. Особенно орехи, глютен, лактозу.</div></li>
+          <li><strong>4.</strong><div>Будь на связи в указанные часы — кто-то придёт за едой.</div></li>
+        </ul>
+      </div>
+
+      <form class="share-form reveal" id="share-form">
+        <div class="field">
+          <label for="title">Что отдаёшь?</label>
+          <input type="text" id="title" placeholder="Например: 2 порции пасты карбонара" required />
+        </div>
+        <div class="field">
+          <label for="from">Откуда (кафе / имя)</label>
+          <input type="text" id="from" placeholder="Кафе «Веранда» или Иван" required />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="category">Категория</label>
+            <select id="category" required>
+              <option value="meals">Готовые блюда</option>
+              <option value="bakery">Хлеб и выпечка</option>
+              <option value="produce">Овощи и фрукты</option>
+              <option value="dairy">Молочка</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="portions">Кол-во порций</label>
+            <input type="number" id="portions" min="1" max="100" value="2" required />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="district">Район</label>
+            <input type="text" id="district" placeholder="Алматы, Алмалинский" required />
+          </div>
+          <div class="field">
+            <label for="until">До какого времени</label>
+            <input type="time" id="until" value="20:00" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="notes">Детали (необязательно)</label>
+          <textarea id="notes" placeholder="Аллергены, упаковка, как добраться..."></textarea>
+        </div>
+        <div class="submit-row">
+          <p class="submit-note">Нажимая «Опубликовать», ты соглашаешься с принципами сообщества.</p>
+          <button type="submit" class="btn btn-primary">
+            Опубликовать
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============= IMPACT ============= -->
+<section id="impact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-num">05 — Эффект</div>
+        <h2>Маленькие шаги,<br/><em>большая разница.</em></h2>
+      </div>
+      <p class="desc">Каждая спасённая порция — это не только еда, но и вода, земля и CO₂, которые ушли на её производство.</p>
+    </div>
+
+    <div class="impact-grid">
+      <div class="impact-card feature reveal">
+        <div>
+          <h4>Главный показатель</h4>
+          <h3>1.3 <em>млрд</em><br/>тонн еды<br/>в мусорке<br/>каждый год.</h3>
+        </div>
+        <p>Это треть всего, что человечество производит. Если бы food waste был страной — он был бы третьим по выбросам CO₂ после Китая и США.</p>
+        <svg class="leaf-art" viewBox="0 0 200 200" fill="none">
+          <path d="M 30 170 C 60 100 110 60 180 30 C 160 110 110 160 40 170 C 30 140 60 100 130 80" stroke="#E8A434" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="impact-card reveal">
+        <h4>Воды сэкономлено</h4>
+        <div class="impact-bignum">2.4M<span class="small"> литров</span></div>
+      </div>
+      <div class="impact-card reveal">
+        <h4>Энергии сэкономлено</h4>
+        <div class="impact-bignum">580k<span class="small"> кВт·ч</span></div>
+      </div>
+      <div class="impact-card reveal">
+        <h4>Дней до углеродной нейтральности</h4>
+        <div class="impact-bignum">147<span class="small"> дн.</span></div>
+      </div>
+      <div class="impact-card reveal">
+        <h4>Активных городов</h4>
+        <div class="impact-bignum">23<span class="small"> города</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4>EcoFood Share</h4>
+      <p>Open-source платформа против пищевых отходов. Сделано волонтёрами, поддерживается сообществом. Лицензия MIT — форкай, развивай, запускай у себя в городе.</p>
+    </div>
+    <div>
+      <h5>Платформа</h5>
+      <ul>
+        <li><a href="#available">Найти еду</a></li>
+        <li><a href="#share">Поделиться</a></li>
+        <li><a href="#map">Карта</a></li>
+        <li><a href="#impact">Статистика</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Сообществу</h5>
+      <ul>
+        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Стать волонтёром</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Подключить кафе</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Telegram-канал</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Документация</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Open-source</h5>
+      <ul>
+        <li><a href="#" onclick="event.preventDefault();showToast('Замени ссылку на свой репозиторий')">GitHub</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Скоро')">Contributing</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('MIT License')">Лицензия</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Скоро')">API</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 · EcoFood Share · MIT</span>
+    <span>v 0.4.2 · Made with care · Almaty</span>
+  </div>
+</footer>
+
+<!-- ============= MODAL ============= -->
+<div class="modal-backdrop" id="modal">
+  <div class="modal">
+    <div class="modal-content-wrap">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div class="modal-img" id="modal-img"></div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============= TOAST ============= -->
+<div class="toast" id="toast">Опубликовано</div>
+
+<script src="app.js"></script>
+</body>
+</html>
