@@ -12,51 +12,102 @@
 ---
 
 
-Designed as a **Digital Public Good (DPG)**, the platform is built to be easily forked, localized, and deployed by any community worldwide.
+# 🌱 EcoFood Share
 
----
+An open-source platform aimed at reducing food waste and improving food accessibility in local communities.  
+This project is designed to align with Digital Public Goods (DPG) standards.
 
-# 🌍 EcoFood Share
-
-## 📖 Project Description
-**EcoFood Share** is an open-source, digital platform designed to combat food waste by connecting cafes, grocery shops, and individuals with surplus food to people who need it. Operating with zero bureaucracy, the platform allows users to list and claim available food in their local area (for free or a symbolic price) to ensure perfectly good food ends up on plates instead of in landfills.
-
-Designed as a **Digital Public Good (DPG)**, the platform is built to be easily forked, localized, and deployed by any community worldwide.
-
----
-
-## ⚠️ Problem & 💡 Solution
-
-### The Problem
-* **Food Waste:** Over 1.3 billion tons of food (one-third of all food produced globally) is wasted every year. 
-* **Environmental Impact:** If food waste were a country, it would be the third-largest emitter of CO₂ globally.
-* **Food Insecurity:** While perfectly good food is thrown away, millions of people still lack access to affordable, fresh meals.
-
-### The Solution
-EcoFood Share provides a localized, real-time marketplace for surplus food. 
-* **For Donors (Cafes/Individuals):** A quick form to upload surplus food before it goes bad.
-* **For Recipients:** An interactive map and filtered list to find and reserve food within walking distance.
-* **The Result:** Reduced carbon footprint, saved resources (water, energy), and stronger, more supportive local communities.
-
----
-
-## 🎯 SDG Alignment
-This project actively aligns with the United Nations Sustainable Development Goals (SDGs), fulfilling the core criteria for Digital Public Goods:
-* **SDG 2: Zero Hunger** – By redirecting surplus food to those who can consume it, improving local food access.
-* **SDG 12: Responsible Consumption and Production** – Directly targeting Target 12.3 (halving per capita global food waste at the retail and consumer levels).
-* **SDG 13: Climate Action** – Reducing methane and CO₂ emissions caused by organic waste decomposing in landfills.
-
----
-
-## 🤝 How to Contribute
+## 🤝 How to Contribute (CONTRIBUTING Logic)
 
 We welcome contributions from developers, designers, and community organizers!  
-As an open-source project aiming for **Digital Public Goods (DPG)** status, we follow an open and inclusive contribution model.
+As an open-source project aiming for DPG status, we follow an open and inclusive contribution model.
 
 ### 🚀 Contribution Workflow
 
-1. Read our `CONTRIBUTING.md` for detailed guidelines.
-2. Fork the repository.
-3. Create a new branch:
-   ```bash
+1. Please read our `CONTRIBUTING.md` for detailed guidelines.
+2. Fork the repository and create a new branch:
    git checkout -b feature/amazing-feature
+3. Commit your changes and push to your branch.
+4. Open a Pull Request (PR):
+   - Use the predefined template located at `.github/pull_request_template.md`
+
+### 🐛 Issues
+
+If you find a bug or have a feature request, please use our automated issue templates located in `.github/ISSUE_TEMPLATE/`:
+
+- `bug_report.md`
+- `feature_request.md`
+
+### 📜 Code of Conduct
+
+All contributors are expected to follow the guidelines in `CODE_OF_CONDUCT.md`.  
+This ensures a respectful, harassment-free, and collaborative environment.
+
+## ⚖️ License Explanation
+
+This project is licensed under the MIT License (see the `LICENSE` file).
+
+### ❓ Why MIT?
+
+To comply with Digital Public Goods (DPG) requirements, the software must use an approved open license.  
+The MIT License was chosen because it is highly permissive, allowing anyone to:
+
+- Use the software commercially or privately  
+- Modify the source code for their own needs  
+- Distribute and deploy their own local instances of EcoFood Share  
+
+### 📌 Requirement
+
+The only requirement is:
+
+> Include the original copyright and license notice in all copies or substantial uses.
+
+This ensures maximum flexibility and encourages global adoption without legal friction.
+
+## 📚 Basic Documentation
+
+### 🏗 Repository Structure & Architecture
+
+- `index.html`  
+  Main frontend interface (Vanilla HTML5, CSS3, JavaScript)  
+  - Custom CSS variables for theming  
+  - Interactive UI  
+
+- `package.json`  
+  Node.js configuration and dependencies  
+
+- `playground-1.mongodb.js`  
+  MongoDB playground script used for:
+  - Database modeling  
+  - Structuring collections (e.g., listings)  
+  - Testing queries  
+
+### ⚙️ .github Configuration
+
+- `dependabot.yml` — Automated dependency updates for security  
+- `pull_request_template.md` — Standardized PR format for better code reviews  
+- `ISSUE_TEMPLATE/`
+  - `bug_report.md`
+  - `feature_request.md`
+
+## 👥 Team Members & Roles
+
+- **Sultan** — Project Lead & Backend/Database Developer  
+  - Project architecture  
+  - MongoDB integration  
+  - Core logic  
+
+- **Alua** — Frontend Engineer  
+  - UI/UX implementation  
+  - HTML/CSS styling  
+  - Responsive design  
+
+- **Azamat** — Research & DPG Compliance  
+  - SDG alignment  
+  - Open-source licensing  
+  - Problem/solution validation  
+
+- **Merey** — QA & Community Manager  
+  - Testing  
+  - GitHub templates  
+  - Managing `CONTRIBUTING.md` & `CODE_OF_CONDUCT.md`
