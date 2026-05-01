@@ -44,7 +44,4 @@ This project actively aligns with the United Nations Sustainable Development Goa
 ### Prerequisites
 Make sure you have Node.js installed for package management and a MongoDB environment for database testing.
 
-### Running Locally
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/ecofood-share.git
+
