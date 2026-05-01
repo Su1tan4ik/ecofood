@@ -16,6 +16,15 @@ Designed as a **Digital Public Good (DPG)**, the platform is built to be easily 
 
 ---
 
+# 🌍 EcoFood Share
+
+## 📖 Project Description
+**EcoFood Share** is an open-source, digital platform designed to combat food waste by connecting cafes, grocery shops, and individuals with surplus food to people who need it. Operating with zero bureaucracy, the platform allows users to list and claim available food in their local area (for free or a symbolic price) to ensure perfectly good food ends up on plates instead of in landfills.
+
+Designed as a **Digital Public Good (DPG)**, the platform is built to be easily forked, localized, and deployed by any community worldwide.
+
+---
+
 ## ⚠️ Problem & 💡 Solution
 
 ### The Problem
@@ -39,9 +48,34 @@ This project actively aligns with the United Nations Sustainable Development Goa
 
 ---
 
-## 🚀 How to Use the Project
-
-### Prerequisites
-Make sure you have Node.js installed for package management and a MongoDB environment for database testing.
-
-
+🤝 How to Contribute (CONTRIBUTING logic)
+We welcome contributions from developers, designers, and community organizers! As an open-source project aiming for DPG status, we follow an open and inclusive contribution model.
+Contribution Workflow
+Please read our CONTRIBUTING.md for detailed guidelines.
+Fork the repository and create a new branch (git checkout -b feature/amazing-feature).
+Commit your changes and push to your branch.
+Open a Pull Request (PR): We have a predefined PR template (.github/pull_request_template.md) to help you describe your changes clearly.
+Issues: If you find a bug or have a feature request, please use our automated issue templates (bug_report.md and feature_request.md) located in the .github/ISSUE_TEMPLATE folder.
+Note: All contributors are expected to adhere to ourCODE_OF_CONDUCT.md, ensuring a harassment-free and collaborative environment.
+⚖️ License Explanation
+This project is licensed under the MIT License (see the LICENSE file).
+Why MIT?
+To comply with Digital Public Goods (DPG) requirements, the software must utilize an approved open license. The MIT License was chosen because it is highly permissive. It allows anyone to:
+Use the software commercially or privately.
+Modify the source code to fit the specific needs of their city or community.
+Distribute and deploy their own local instances of EcoFood Share.
+The only requirement is that the original copyright and license notice must be included in all copies or substantial uses of the software. This ensures maximum flexibility and encourages global adoption without legal friction.
+📚 Basic Documentation
+Repository Structure & Architecture
+index.html: The main frontend application interface (Vanilla HTML5, CSS3, JS). Features custom CSS variables for theming and an interactive UI.
+package.json: Contains Node.js project configurations and dependencies.
+playground-1.mongodb.js: MongoDB playground script used for database modeling, structuring collections for listings, and testing queries.
+.github/: Contains community health files and project configurations:
+dependabot.yml: Automated dependency updates to keep the project secure.
+pull_request_template.md: Standardized template for code reviews.
+ISSUE_TEMPLATE/: Contains bug_report.md and feature_request.md to standardize community reporting.
+👥 Team Members & Roles
+Sultan - Project Lead & Backend/Database Developer (Project architecture, MongoDB integration, core logic)
+Alua - Frontend Engineer (UI/UX implementation, HTML/CSS styling, responsive design)
+Azamat - Research & DPG Compliance (SDG alignment, open-source licensing, problem/solution validation)
+Merey - QA & Community Manager (Testing, GitHub templates, CONTRIBUTING.md / CODE_OF_CONDUCT.md management)
