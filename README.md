@@ -1,88 +1,143 @@
 # 🌱 EcoFood Share
 
-> Open-source платформа против пищевых отходов. Помогает кафе, магазинам и людям делиться лишней едой с теми, кому она нужна.
+> An open-source platform that helps cafés, shops, and individuals share surplus food with people in need — reducing food waste, one meal at a time.
 
-![Status](https://img.shields.io/badge/status-demo-green) ![License](https://img.shields.io/badge/license-MIT-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-purple.svg)](CODE_OF_CONDUCT.md)
 
-## ✨ Что внутри
+🔗 **Live demo:** [su1tan4ik.github.io/ecofood](https://su1tan4ik.github.io/ecofood/)
 
-Полностью кликабельный одностраничный фронтенд с реальной интерактивностью:
+---
 
-- **Лента объявлений** — фильтры по категориям (хлеб, готовое, овощи, молочка) + живой поиск
-- **Модальные карточки** — клик по объявлению открывает полные детали
-- **Форма «Поделиться едой»** — рабочая, добавляет объявление в ленту, сохраняет в `localStorage`
-- **Интерактивная карта города** — SVG с маркерами, hover-подсказками и пульсацией
-- **Счётчики со статистикой** — анимация при появлении в зоне видимости
-- **Бронирование** — кнопка с toast-уведомлением
-- **Адаптив** — корректно работает на мобильных
-- **Современный редакционный дизайн** — фирменная типографика (Fraunces + Bricolage Grotesque), бумажная текстура, тёплая палитра
+## 🌍 The Problem
 
-## 🚀 Деплой на GitHub Pages — за 3 минуты
+Every year, **1.3 billion tonnes** of food are thrown away worldwide — that's a third of everything humanity produces. Meanwhile, hundreds of millions go hungry. If food waste were a country, it would be the **third-largest CO₂ emitter** after China and the US.
 
-### Шаг 1. Создай репозиторий
-1. Зайди на [github.com](https://github.com) → **New repository**
-2. Назови, например, `ecofood-share`
-3. Сделай его **Public**
+**EcoFood Share** is a small attempt to fix this — locally, transparently, and without bureaucracy.
 
-### Шаг 2. Загрузи файлы
-Просто перетащи `index.html` (и этот `README.md`) в репозиторий через веб-интерфейс GitHub:
-- Открой репозиторий → **Add file** → **Upload files**
-- Перетащи файлы → **Commit changes**
+## ✨ Features
 
-### Шаг 3. Включи GitHub Pages
-1. В репозитории → **Settings** → **Pages** (в боковом меню)
-2. **Source**: выбери `Deploy from a branch`
-3. **Branch**: `main` → папка `/ (root)` → **Save**
-4. Через 30–60 секунд сайт будет доступен по адресу:
-   ```
-   https://<твой-username>.github.io/ecofood-share/
-   ```
+- 📋 **Live listings feed** — browse surplus food shared by cafés, shops, and neighbors with category filters and instant search
+- 🃏 **Detailed item cards** — click any listing to see full info: portions, location, pickup window, allergens, notes
+- 📝 **Share form** — publish your own surplus in 30 seconds. Saves to `localStorage` so listings persist across reloads
+- 🗺️ **Interactive city map** — SVG-based map with hover tooltips, animated pins, and live indicators
+- 📊 **Impact dashboard** — animated counters showing portions saved, CO₂ avoided, water and energy preserved
+- 🎫 **Reservation flow** — claim a listing with toast confirmations
+- 📱 **Fully responsive** — works on mobile, tablet, and desktop
+- 🎨 **Editorial design** — Fraunces + Bricolage Grotesque typography, paper-grain texture, warm earthy palette
+- ♿ **Zero dependencies** — pure HTML, CSS, and vanilla JavaScript. No build step required.
 
-Готово 🎉
+## 🖼️ Preview
 
-## 🛠️ Локальный запуск
+```
+┌──────────────────────────────────────────────────┐
+│  EcoFood Share — Share food. Save the planet.   │
+├──────────────────────────────────────────────────┤
+│  [48,312 portions]  [1,893 kg CO₂]  [312 cafés] │
+├──────────────────────────────────────────────────┤
+│  🥖 Fresh bread        🍝 Pasta carbonara       │
+│  Bakery «Kolosok»      Café Veranda             │
+│  4 portions · until    6 portions · until       │
+│  21:00          [→]    19:30           [→]     │
+└──────────────────────────────────────────────────┘
+```
 
-Никакой сборки не нужно. Просто открой `index.html` в браузере:
+## 🚀 Quick Start
+
+### Try it online
+Open the [live demo](https://su1tan4ik.github.io/ecofood/) — no installation needed.
+
+### Run locally
 
 ```bash
-# вариант 1 — через Python
+# Clone the repository
+git clone https://github.com/Su1tan4ik/ecofood.git
+cd ecofood
+
+# Option 1 — open directly
+open index.html      # macOS
+xdg-open index.html  # Linux
+start index.html     # Windows
+
+# Option 2 — serve with Python
 python3 -m http.server 8000
-# открой http://localhost:8000
+# then open http://localhost:8000
 
-# вариант 2 — просто двойной клик по index.html
+# Option 3 — serve with npx
+npx serve .
 ```
 
-## 📁 Структура
+## 📁 Project Structure
 
 ```
-ecofood-share/
-├── index.html      # вся платформа в одном файле (HTML + CSS + JS)
-└── README.md
+ecofood/
+├── index.html              # Production build — single file, deployed to GitHub Pages
+├── src/                    # Development sources (separated for easier editing)
+│   ├── index.html
+│   ├── styles.css
+│   └── app.js
+├── .github/
+│   ├── dependabot.yml
+│   ├── pull_request_template.md
+│   └── ISSUE_TEMPLATE/
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+└── CODE_OF_CONDUCT.md
 ```
 
-Никаких зависимостей, билдов, npm. Только шрифты подгружаются с Google Fonts.
+## 🎨 Customization
 
-## 🎨 Дизайн-токены
-
-Все цвета и стили — в CSS-переменных `:root` в начале файла. Меняй их, чтобы перекрасить весь интерфейс под свой бренд:
+All design tokens live in CSS custom properties at the top of `index.html` (or `src/styles.css`). Change them and the entire interface re-themes:
 
 ```css
---moss-deep: #0E2419;     /* основной зелёный */
---terracotta: #D7572C;    /* акцент */
---cream: #F4EDE0;         /* фон */
---amber: #E8A434;         /* подсветка */
+:root {
+  --moss-deep:  #0E2419;  /* primary green   */
+  --terracotta: #D7572C;  /* accent          */
+  --cream:      #F4EDE0;  /* background      */
+  --amber:      #E8A434;  /* highlights      */
+  --paper:      #FAF6EC;  /* card surface    */
+}
 ```
 
-## 💡 Что доработать дальше
+## 🛣️ Roadmap
 
-- [ ] Подключить настоящий бэкенд (Supabase / Firebase / собственный API)
-- [ ] Авторизация и профили пользователей
-- [ ] Реальная карта (Leaflet / Mapbox / Yandex Maps)
-- [ ] Чат между донором и получателем
-- [ ] Уведомления о новых объявлениях рядом
-- [ ] Загрузка фото
-- [ ] Многоязычность (EN / KZ)
+- [ ] Real backend (Supabase / Firebase)
+- [ ] User authentication and profiles
+- [ ] Real maps integration (Leaflet / Mapbox)
+- [ ] In-app chat between donor and recipient
+- [ ] Push notifications for nearby listings
+- [ ] Photo uploads
+- [ ] i18n (English / Kazakh / Russian)
+- [ ] PWA with offline support
+- [ ] Accessibility audit (WCAG 2.1 AA)
 
-## 📜 Лицензия
+## 🤝 Contributing
 
-MIT — форкай, развивай, запускай у себя в городе. Если запустишь — расскажи, будет приятно.
+Contributions are very welcome — whether it's a bug fix, a new feature, a translation, or just a typo. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+
+By participating, you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+**Good first issues** are tagged `good first issue` — perfect if it's your first open-source contribution.
+
+## 👥 Contributors
+
+Thanks to everyone who has helped build EcoFood Share. See the [contributors graph](../../graphs/contributors).
+
+## 📜 License
+
+Distributed under the **MIT License**. See [LICENSE](LICENSE) for full text.
+
+You're free to fork, modify, and deploy your own instance in your city. If you do — let us know, we'd love to hear about it.
+
+## 💚 Acknowledgments
+
+- Inspired by [OLIO](https://olioapp.com), [Too Good To Go](https://toogoodtogo.com), and the broader food-rescue community
+- Typography by [Fraunces](https://fonts.google.com/specimen/Fraunces) and [Bricolage Grotesque](https://fonts.google.com/specimen/Bricolage+Grotesque)
+- Icons hand-drawn as inline SVG
+
+---
+
+<sub>Made with care for a less wasteful world. 🌱</sub>

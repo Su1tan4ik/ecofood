@@ -1,96 +1,115 @@
-# 🤝 Как контрибьютить в EcoFood Share
+# 🤝 Contributing to EcoFood Share
 
-Спасибо, что хочешь помочь! Этот документ объясняет, как внести вклад в проект — даже если ты делаешь это впервые.
-
-## 🌱 Чем можно помочь
-
-- 🐛 **Исправить баг** — находите проблемы, открывайте Issue
-- ✨ **Добавить фичу** — новая категория еды, фильтр, тема оформления
-- 🎨 **Улучшить дизайн** — иконки, иллюстрации, адаптив
-- 🌐 **Перевести интерфейс** — английский, казахский, другие языки
-- 📝 **Поправить документацию** — опечатки, уточнения, примеры
-- ♿ **Сделать доступнее** — a11y, контраст, навигация с клавиатуры
-
-## 🔧 Как начать
-
-### 1. Форк и клон
-
-```bash
-# нажми Fork в правом верхнем углу репозитория, потом:
-git clone https://github.com/<твой-username>/ecofood.git
-cd ecofood
-```
-
-### 2. Создай ветку для своих изменений
-
-```bash
-git checkout -b feature/название-фичи
-# или
-git checkout -b fix/что-чинишь
-```
-
-### 3. Внеси изменения
-
-- Редактируй `index.html` для деплоя или файлы в `src/` для разработки
-- Никаких билдов и npm-команд — это чистый HTML/CSS/JS
-- Открой `index.html` в браузере, чтобы проверить
-
-### 4. Закоммить и отправь PR
-
-```bash
-git add .
-git commit -m "feat: коротко что добавил"
-git push origin feature/название-фичи
-```
-
-Потом на GitHub нажми **Compare & pull request** и опиши, что сделал.
-
-## ✍️ Стиль коммитов
-
-Используем [Conventional Commits](https://www.conventionalcommits.org/ru/):
-
-| Префикс | Когда использовать | Пример |
-|---|---|---|
-| `feat:` | Новая фича | `feat: добавлен фильтр по аллергенам` |
-| `fix:` | Исправлен баг | `fix: модалка не закрывалась на Esc` |
-| `docs:` | Документация | `docs: уточнена инструкция деплоя` |
-| `style:` | Только стили / форматирование | `style: единые отступы в CSS` |
-| `refactor:` | Переработка без изменения поведения | `refactor: вынес карточки в компонент` |
-| `chore:` | Инфраструктура, конфиги | `chore: настроен Dependabot` |
-
-## 📋 Чек-лист перед PR
-
-- [ ] Сайт открывается без ошибок в консоли
-- [ ] Адаптив работает (проверь на мобильном размере)
-- [ ] Не сломал существующие фичи
-- [ ] Описал в PR, что и зачем сделал
-- [ ] Если визуальные изменения — приложил скриншот
-
-## 🐛 Как сообщить о баге
-
-Открой [Issue](../../issues/new) и опиши:
-
-1. **Что произошло** — что ты ожидал увидеть и что увидел
-2. **Шаги для воспроизведения** — 1, 2, 3...
-3. **Окружение** — браузер, ОС, мобильное / десктоп
-4. **Скриншот** — если возможно
-
-## 💬 Где обсудить
-
-- **Issues** — баги и предложения фич
-- **Discussions** — общие вопросы и идеи
-- **Pull Requests** — обсуждение конкретных изменений
-
-## 🛡️ Правила сообщества
-
-Все участники следуют [Code of Conduct](CODE_OF_CONDUCT.md). Если кратко — уважай других, будь конструктивен, не токсичь.
-
-## 📜 Лицензия
-
-Контрибьютя в проект, ты соглашаешься, что твой код будет распространяться под [MIT License](LICENSE).
+Thanks for your interest in contributing! This guide explains how you can help improve the project — even if it's your first time.
 
 ---
 
-**Первый PR?** Вот хорошие задачки для старта — ищи issues с тегом `good first issue`.
+## 🌱 Ways to Contribute
 
-Спасибо, что делаешь мир чуть менее голодным 🌱
+* 🐛 **Fix bugs** — identify issues and open an Issue
+* ✨ **Add features** — new food categories, filters, themes
+* 🎨 **Improve design** — icons, illustrations, responsiveness
+* 🌐 **Translate the interface** — English, Kazakh, or other languages
+* 📝 **Improve documentation** — fix typos, clarify instructions, add examples
+* ♿ **Enhance accessibility** — a11y, contrast, keyboard navigation
+
+---
+
+## 🔧 Getting Started
+
+### 1. Fork and Clone
+
+```bash
+# Click "Fork" in the top-right corner of the repository, then:
+git clone https://github.com/<your-username>/ecofood.git
+cd ecofood
+```
+
+### 2. Create a Branch
+
+```bash
+git checkout -b feature/your-feature-name
+# or
+git checkout -b fix/what-you-are-fixing
+```
+
+### 3. Make Changes
+
+* Edit `index.html` for deployment or files inside `src/` for development
+* No build tools or npm commands — this is a pure HTML/CSS/JS project
+* Open `index.html` in your browser to test
+
+---
+
+### 4. Commit and Submit a PR
+
+```bash
+git add .
+git commit -m "feat: short description of your change"
+git push origin feature/your-feature-name
+```
+
+Then go to GitHub and click **Compare & pull request**, and describe your changes.
+
+---
+
+## ✍️ Commit Style
+
+We use [Conventional Commits](https://www.conventionalcommits.org/):
+
+| Prefix      | When to use        | Example                            |
+| ----------- | ------------------ | ---------------------------------- |
+| `feat:`     | New feature        | `feat: add allergen filter`        |
+| `fix:`      | Bug fix            | `fix: modal does not close on Esc` |
+| `docs:`     | Documentation      | `docs: clarify deployment steps`   |
+| `style:`    | Formatting only    | `style: unify CSS spacing`         |
+| `refactor:` | Code restructuring | `refactor: extract card component` |
+| `chore:`    | Config / tooling   | `chore: setup Dependabot`          |
+
+---
+
+## 📋 PR Checklist
+
+* [ ] The site runs without console errors
+* [ ] Responsive layout works (check mobile view)
+* [ ] Existing features are not broken
+* [ ] PR clearly explains what and why
+* [ ] Screenshots are attached (for UI changes)
+
+---
+
+## 🐛 Reporting Bugs
+
+Open an [Issue](../../issues/new) and include:
+
+1. **What happened** — expected vs actual behavior
+2. **Steps to reproduce** — step-by-step
+3. **Environment** — browser, OS, mobile/desktop
+4. **Screenshot** — if applicable
+
+---
+
+## 💬 Where to Discuss
+
+* **Issues** — bugs and feature requests
+* **Discussions** — general ideas and questions
+* **Pull Requests** — discussion of specific changes
+
+---
+
+## 🛡️ Community Guidelines
+
+All participants must follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+In short — be respectful, constructive, and professional.
+
+---
+
+## 📜 License
+
+By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+
+---
+
+**First PR?** Look for issues labeled `good first issue` to get started.
+
+Thanks for helping make the world a little less hungry 🌱
