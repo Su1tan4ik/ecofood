@@ -1,35 +1,35 @@
 ---
-name: 🐛 Сообщить о баге
-about: Что-то работает не так, как должно
+name: 🐛 Report a bug
+about: Something is not working as expected
 title: "[BUG] "
 labels: bug
 assignees: ''
 ---
 
-## 🐛 Что произошло
+## 🐛 What happened
 
-Кратко опиши проблему.
+Briefly describe the problem.
 
-## 🔁 Шаги для воспроизведения
+## 🔁 Steps to reproduce
 
-1. Открыть страницу `...`
-2. Нажать на `...`
-3. Увидеть `...`
+1. Open the page `...`
+2. Click on `...`
+3. See `...`
 
-## ✅ Ожидаемое поведение
+## ✅ Expected behavior
 
-Что должно было произойти.
+What should have happened.
 
-## 📸 Скриншоты
+## 📸 Screenshots
 
-Если возможно, приложи скриншот.
+If possible, attach a screenshot.
 
-## 🖥️ Окружение
+## 🖥️ Environment
 
-- ОС: [например, Windows 11 / macOS 14 / Android 13]
-- Браузер: [Chrome 130 / Safari 17 / Firefox 120]
-- Размер экрана: [десктоп / мобильный]
+- OS: [for example, Windows 11 / macOS 14 / Android 13]
+- Browser: [Chrome 130 / Safari 17 / Firefox 120]
+- Screen size: [desktop / mobile]
 
-## 💬 Дополнительный контекст
+## 💬 Additional context
 
-Что-то ещё, что важно знать.
+Anything else that is important to know.

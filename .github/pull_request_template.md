@@ -1,28 +1,28 @@
-# Описание
+# Description
 
-Что меняется в этом PR? Зачем?
+What changes in this PR? Why?
 
-## Тип изменений
+## Type of changes
 
-- [ ] 🐛 Bug fix (исправление, не ломающее существующий функционал)
-- [ ] ✨ New feature (новая фича, не ломающая существующий функционал)
-- [ ] 💥 Breaking change (изменение, которое ломает обратную совместимость)
-- [ ] 📝 Документация
-- [ ] 🎨 Стили / UI
-- [ ] ♻️ Рефакторинг
+- [ ] 🐛 Bug fix (a fix that does not break existing functionality)
+- [ ] ✨ New feature (a new feature that does not break existing functionality)
+- [ ] 💥 Breaking change (a change that breaks backward compatibility)
+- [ ] 📝 Documentation
+- [ ] 🎨 Styles / UI
+- [ ] ♻️ Refactoring
 
-## Связанный Issue
+## Related Issue
 
-Closes #(номер)
+Closes #(number)
 
-## Чек-лист
+## Checklist
 
-- [ ] Я прочитал [CONTRIBUTING.md](../CONTRIBUTING.md)
-- [ ] Сайт открывается без ошибок в консоли
-- [ ] Адаптив работает на мобильном
-- [ ] Я обновил документацию (если нужно)
-- [ ] Все существующие фичи продолжают работать
+- [ ] I have read [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [ ] The website opens without console errors
+- [ ] The layout is responsive on mobile
+- [ ] I have updated the documentation if needed
+- [ ] All existing features continue to work
 
-## Скриншоты
+## Screenshots
 
-Если изменения визуальные — приложи до/после.
+If the changes are visual, attach before/after screenshots.

@@ -1,27 +1,27 @@
 ---
-name: ✨ Предложить фичу
-about: Идея для нового функционала
+name: ✨ Suggest a feature
+about: Idea for new functionality
 title: "[FEATURE] "
 labels: enhancement
 assignees: ''
 ---
 
-## 💡 Идея
+## 💡 Idea
 
-Кратко опиши, что хочешь добавить.
+Briefly describe what you want to add.
 
-## 🎯 Зачем это нужно
+## 🎯 Why it is needed
 
-Какую проблему это решает? Кому будет полезно?
+What problem does it solve? Who will benefit from it?
 
-## 🛠️ Как это могло бы работать
+## 🛠️ How it could work
 
-Опиши примерное решение или интерфейс. Можно с мокапом или ASCII-схемой.
+Describe the possible solution or interface. You can include a mockup or an ASCII diagram.
 
-## 🔄 Альтернативы
+## 🔄 Alternatives
 
-Какие ещё варианты ты рассматривал?
+What other options did you consider?
 
-## 📚 Дополнительный контекст
+## 📚 Additional context
 
-Ссылки, скриншоты, примеры с других сайтов.
+Links, screenshots, examples from other websites.
