@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>EcoFood Share — Делись едой, спасай планету</title>
-<meta name="description" content="Открытая платформа, помогающая кафе, магазинам и людям делиться лишней едой с теми, кому она нужна." />
+<title>EcoFood Share — Share food. Save the planet.</title>
+<meta name="description" content="Open-source platform helping cafés, shops and people share surplus food with those who need it." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -1006,12 +1006,12 @@
       Eco<em>Food</em>Share
     </a>
     <ul class="nav-links">
-      <li><a href="#available">Доступная еда</a></li>
-      <li><a href="#how">Как это работает</a></li>
-      <li><a href="#map">Карта</a></li>
-      <li><a href="#impact">Эффект</a></li>
+      <li><a href="#available">Available food</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#map">Map</a></li>
+      <li><a href="#impact">Impact</a></li>
     </ul>
-    <button class="btn-share" onclick="document.getElementById('share').scrollIntoView({behavior:'smooth'})">Поделиться едой</button>
+    <button class="btn-share" onclick="document.getElementById('share').scrollIntoView({behavior:'smooth'})">Share food</button>
   </div>
 </nav>
 
@@ -1019,26 +1019,26 @@
 <section class="hero" id="top">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow"><span class="dot"></span> Сейчас в сети — 1 247 человек</div>
+      <div class="eyebrow"><span class="dot"></span> Online now — 1,247 people</div>
       <h1>
-        Делись<br/>едой<span class="leaf">
+        Share<br/>food<span class="leaf">
           <svg viewBox="0 0 24 24" fill="none">
             <path d="M3 21 C 6 13 12 8 21 5 C 19 13 14 19 7 21 C 6 18 8 14 14 11" stroke="#D7572C" stroke-width="2" stroke-linecap="round"/>
           </svg>
         </span><br/>
-        <span class="it">спасай планету.</span>
+        <span class="it">save the planet.</span>
       </h1>
     </div>
     <div class="hero-side">
       <p class="hero-lede">
-        Каждый третий продукт в мире <strong>выбрасывается</strong>. Кафе, магазины и обычные люди объединяются здесь, чтобы передать лишнюю еду тем, кому она нужна — бесплатно или почти.
+        Every third product in the world gets <strong>thrown away</strong>. Cafés, shops and regular people unite here to give surplus food to those in need — for free or almost free.
       </p>
       <div class="hero-cta">
         <a href="#available" class="btn btn-primary">
-          Найти еду рядом
+          Find food nearby
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
-        <a href="#share" class="btn btn-secondary">Поделиться лишним</a>
+        <a href="#share" class="btn btn-secondary">Share your surplus</a>
       </div>
     </div>
   </div>
@@ -1048,20 +1048,20 @@
 <div class="ticker">
   <div class="ticker-inner">
     <div class="stat">
-      <div class="stat-num" data-count="48312">0<span class="unit"> порций</span></div>
-      <div class="stat-label">Спасено от мусорки</div>
+      <div class="stat-num" data-count="48312">0<span class="unit"> portions</span></div>
+      <div class="stat-label">Saved from trash</div>
     </div>
     <div class="stat">
-      <div class="stat-num" data-count="1893">0<span class="unit"> кг</span></div>
-      <div class="stat-label">CO₂ не попало в воздух</div>
+      <div class="stat-num" data-count="1893">0<span class="unit"> kg</span></div>
+      <div class="stat-label">CO₂ kept out of the air</div>
     </div>
     <div class="stat">
       <div class="stat-num" data-count="312">0</div>
-      <div class="stat-label">Заведений-партнёров</div>
+      <div class="stat-label">Partner venues</div>
     </div>
     <div class="stat">
       <div class="stat-num" data-count="14782">0</div>
-      <div class="stat-label">Активных участников</div>
+      <div class="stat-label">Active members</div>
     </div>
   </div>
 </div>
@@ -1071,20 +1071,20 @@
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="section-num">01 — Доступно сейчас</div>
-        <h2>Свежее <em>сегодня</em>,<br/>и почти бесплатно.</h2>
+        <div class="section-num">01 — Available now</div>
+        <h2>Fresh <em>today</em>,<br/>and almost free.</h2>
       </div>
-      <p class="desc">Объявления обновляются каждые 5 минут. Большинство — бесплатно, иногда заведения просят символическую сумму, чтобы покрыть упаковку.</p>
+      <p class="desc">Listings refresh every 5 minutes. Most are free; sometimes venues ask a token amount to cover packaging.</p>
     </div>
 
     <div class="filter-bar reveal">
-      <button class="chip active" data-filter="all">Все <span class="count" id="count-all">0</span></button>
-      <button class="chip" data-filter="bakery">Хлеб и выпечка</button>
-      <button class="chip" data-filter="meals">Готовые блюда</button>
-      <button class="chip" data-filter="produce">Овощи и фрукты</button>
-      <button class="chip" data-filter="dairy">Молочка</button>
+      <button class="chip active" data-filter="all">All <span class="count" id="count-all">0</span></button>
+      <button class="chip" data-filter="bakery">Bread &amp; pastries</button>
+      <button class="chip" data-filter="meals">Prepared meals</button>
+      <button class="chip" data-filter="produce">Produce</button>
+      <button class="chip" data-filter="dairy">Dairy</button>
       <div class="search">
-        <input type="text" id="search-input" placeholder="Поиск по названию или району..." />
+        <input type="text" id="search-input" placeholder="Search by name or district..." />
       </div>
     </div>
 
@@ -1097,26 +1097,26 @@
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="section-num">02 — Как это работает</div>
-        <h2>Три шага. <em>Без бюрократии.</em></h2>
+        <div class="section-num">02 — How it works</div>
+        <h2>Three steps. <em>No bureaucracy.</em></h2>
       </div>
-      <p class="desc">Мы не зарабатываем на пользователях и не берём комиссий. Платформа — open-source, и любой может запустить свой инстанс.</p>
+      <p class="desc">We don't earn from users and don't take fees. The platform is open-source — anyone can run their own instance.</p>
     </div>
     <div class="steps">
       <div class="step reveal">
-        <div class="step-num">01 / Поделись</div>
-        <h3>Загрузи <em>лишнее</em></h3>
-        <p>Фото, краткое описание, район и время, до которого еда должна быть забрана. Пять полей, тридцать секунд.</p>
+        <div class="step-num">01 / Share</div>
+        <h3>Post your <em>surplus</em></h3>
+        <p>Photo, short description, district and pickup deadline. Five fields, thirty seconds.</p>
       </div>
       <div class="step reveal">
-        <div class="step-num">02 / Найди</div>
-        <h3>Выбери <em>рядом</em></h3>
-        <p>Карта показывает, что доступно в радиусе пешей прогулки. Фильтры по типу еды, цене и срочности.</p>
+        <div class="step-num">02 / Find</div>
+        <h3>Pick something <em>nearby</em></h3>
+        <p>The map shows what is available within walking distance. Filter by food type, price and urgency.</p>
       </div>
       <div class="step reveal">
-        <div class="step-num">03 / Забери</div>
-        <h3>Договорись и <em>забери</em></h3>
-        <p>Чат внутри платформы. Подтверждение получения — и +1 порция спасённой еды в твоей статистике.</p>
+        <div class="step-num">03 / Pick up</div>
+        <h3>Coordinate and <em>collect</em></h3>
+        <p>In-platform chat. Confirm pickup — and +1 saved portion in your stats.</p>
       </div>
     </div>
   </div>
@@ -1127,14 +1127,14 @@
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="section-num">03 — Карта города</div>
-        <h2>Точки с <em>едой</em> рядом.</h2>
+        <div class="section-num">03 — City map</div>
+        <h2>Spots with <em>food</em> nearby.</h2>
       </div>
-      <p class="desc">Наведи курсор на маркер — увидишь, что отдают и до какого времени. Кликни, чтобы открыть детали.</p>
+      <p class="desc">Hover a pin to see what is offered and until when. Click to open details.</p>
     </div>
 
     <div class="map-wrap reveal">
-      <div class="map-overlay"><span class="live"></span> Live · 12 точек активны</div>
+      <div class="map-overlay"><span class="live"></span> Live · 12 active spots</div>
       <div class="map-tooltip" id="map-tooltip"></div>
       <svg class="map-svg" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
         <!-- abstract city -->
@@ -1165,35 +1165,35 @@
           <path d="M 850 0 L 880 600"/>
         </g>
         <!-- pins -->
-        <g class="map-pin" data-name="Пекарня «Колосок»" data-info="3 батона хлеба · до 21:00" transform="translate(180, 200)">
+        <g class="map-pin" data-name="Kolosok Bakery" data-info="3 loaves of bread · until 21:00" transform="translate(180, 200)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
-        <g class="map-pin moss" data-name="Кафе Veranda" data-info="6 порций салата · до 19:30" transform="translate(420, 280)">
+        <g class="map-pin moss" data-name="Café Veranda" data-info="6 salad portions · until 19:30" transform="translate(420, 280)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
-        <g class="map-pin amber" data-name="Магазин «Свежее»" data-info="ящик помидоров · до 22:00" transform="translate(680, 180)">
+        <g class="map-pin amber" data-name="Fresh Market" data-info="crate of tomatoes · until 22:00" transform="translate(680, 180)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
-        <g class="map-pin" data-name="Кофейня Drip" data-info="круассаны · до 20:00" transform="translate(800, 340)">
+        <g class="map-pin" data-name="Drip Coffee" data-info="croissants · until 20:00" transform="translate(800, 340)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
-        <g class="map-pin moss" data-name="Анна (частное)" data-info="борщ домашний · до 23:00" transform="translate(950, 460)">
+        <g class="map-pin moss" data-name="Anna (private)" data-info="homemade borscht · until 23:00" transform="translate(950, 460)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
-        <g class="map-pin amber" data-name="Ресторан Mira" data-info="2 пиццы · до 22:30" transform="translate(560, 460)">
+        <g class="map-pin amber" data-name="Mira Restaurant" data-info="2 pizzas · until 22:30" transform="translate(560, 460)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
-        <g class="map-pin" data-name="Зерновая лавка" data-info="киноа, гречка · до завтра" transform="translate(320, 420)">
+        <g class="map-pin" data-name="Grain Shop" data-info="quinoa, buckwheat · until tomorrow" transform="translate(320, 420)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
-        <g class="map-pin moss" data-name="Foodtruck Tacos" data-info="4 порции · до 18:30" transform="translate(1050, 220)">
+        <g class="map-pin moss" data-name="Foodtruck Tacos" data-info="4 portions · until 18:30" transform="translate(1050, 220)">
           <circle class="pin-pulse" r="14"/>
           <circle class="pin-circle" r="9"/>
         </g>
@@ -1207,66 +1207,66 @@
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="section-num">04 — Поделиться</div>
-        <h2>Есть <em>лишнее</em>?<br/>Опубликуй за 30 секунд.</h2>
+        <div class="section-num">04 — Share</div>
+        <h2>Got <em>surplus</em>?<br/>Post it in 30 seconds.</h2>
       </div>
-      <p class="desc">Объявление появится в ленте сразу же. Все данные хранятся локально, в этом демо ничего не отправляется на сервер.</p>
+      <p class="desc">The listing appears in the feed immediately. All data is stored locally — this demo sends nothing to a server.</p>
     </div>
 
     <div class="form-grid">
       <div class="form-intro reveal">
-        <h3>Несколько <em>правил</em>, чтобы всем было хорошо.</h3>
-        <p>Мы не контролируем заведения, но придерживаемся принципов: безопасность, честность и уважение. Если еда испорчена — не выкладывай. Если опаздываешь — предупреди.</p>
+        <h3>A few <em>rules</em>, so everyone has a good time.</h3>
+        <p>We don't control venues, but we stick to principles: safety, honesty and respect. If food is spoiled — don't post it. If you're running late — let them know.</p>
         <ul class="form-tips">
-          <li><strong>1.</strong><div>Проверь срок годности. Если меньше 24 часов — добавь тег «срочно».</div></li>
-          <li><strong>2.</strong><div>Опиши состояние честно: открыто/закрыто, разогревалось ли.</div></li>
-          <li><strong>3.</strong><div>Укажи аллергены, если знаешь. Особенно орехи, глютен, лактозу.</div></li>
-          <li><strong>4.</strong><div>Будь на связи в указанные часы — кто-то придёт за едой.</div></li>
+          <li><strong>1.</strong><div>Check the expiry date. If less than 24 hours — add the "urgent" tag.</div></li>
+          <li><strong>2.</strong><div>Describe the state honestly: open/sealed, reheated or not.</div></li>
+          <li><strong>3.</strong><div>List allergens if you know them. Especially nuts, gluten, lactose.</div></li>
+          <li><strong>4.</strong><div>Be reachable during the listed hours — someone will come pick up.</div></li>
         </ul>
       </div>
 
       <form class="share-form reveal" id="share-form">
         <div class="field">
-          <label for="title">Что отдаёшь?</label>
-          <input type="text" id="title" placeholder="Например: 2 порции пасты карбонара" required />
+          <label for="title">What are you sharing?</label>
+          <input type="text" id="title" placeholder="E.g. 2 portions of pasta carbonara" required />
         </div>
         <div class="field">
-          <label for="from">Откуда (кафе / имя)</label>
-          <input type="text" id="from" placeholder="Кафе «Веранда» или Иван" required />
+          <label for="from">From (café / name)</label>
+          <input type="text" id="from" placeholder="Café Veranda or Ivan" required />
         </div>
         <div class="field-row">
           <div class="field">
-            <label for="category">Категория</label>
+            <label for="category">Category</label>
             <select id="category" required>
-              <option value="meals">Готовые блюда</option>
-              <option value="bakery">Хлеб и выпечка</option>
-              <option value="produce">Овощи и фрукты</option>
-              <option value="dairy">Молочка</option>
+              <option value="meals">Prepared meals</option>
+              <option value="bakery">Bread &amp; pastries</option>
+              <option value="produce">Produce</option>
+              <option value="dairy">Dairy</option>
             </select>
           </div>
           <div class="field">
-            <label for="portions">Кол-во порций</label>
+            <label for="portions">Number of portions</label>
             <input type="number" id="portions" min="1" max="100" value="2" required />
           </div>
         </div>
         <div class="field-row">
           <div class="field">
-            <label for="district">Район</label>
-            <input type="text" id="district" placeholder="Алматы, Алмалинский" required />
+            <label for="district">District</label>
+            <input type="text" id="district" placeholder="Almaty, Almaly" required />
           </div>
           <div class="field">
-            <label for="until">До какого времени</label>
+            <label for="until">Until when</label>
             <input type="time" id="until" value="20:00" required />
           </div>
         </div>
         <div class="field">
-          <label for="notes">Детали (необязательно)</label>
-          <textarea id="notes" placeholder="Аллергены, упаковка, как добраться..."></textarea>
+          <label for="notes">Details (optional)</label>
+          <textarea id="notes" placeholder="Allergens, packaging, how to find us..."></textarea>
         </div>
         <div class="submit-row">
-          <p class="submit-note">Нажимая «Опубликовать», ты соглашаешься с принципами сообщества.</p>
+          <p class="submit-note">By clicking "Publish" you agree to the community principles.</p>
           <button type="submit" class="btn btn-primary">
-            Опубликовать
+            Publish
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
           </button>
         </div>
@@ -1280,38 +1280,38 @@
   <div class="container">
     <div class="section-head reveal">
       <div>
-        <div class="section-num">05 — Эффект</div>
-        <h2>Маленькие шаги,<br/><em>большая разница.</em></h2>
+        <div class="section-num">05 — Impact</div>
+        <h2>Small steps,<br/><em>big difference.</em></h2>
       </div>
-      <p class="desc">Каждая спасённая порция — это не только еда, но и вода, земля и CO₂, которые ушли на её производство.</p>
+      <p class="desc">Each saved portion is not just food, but also the water, land and CO₂ that went into making it.</p>
     </div>
 
     <div class="impact-grid">
       <div class="impact-card feature reveal">
         <div>
-          <h4>Главный показатель</h4>
-          <h3>1.3 <em>млрд</em><br/>тонн еды<br/>в мусорке<br/>каждый год.</h3>
+          <h4>Main metric</h4>
+          <h3>1.3 <em>billion</em><br/>tonnes of food<br/>thrown away<br/>every year.</h3>
         </div>
-        <p>Это треть всего, что человечество производит. Если бы food waste был страной — он был бы третьим по выбросам CO₂ после Китая и США.</p>
+        <p>That's a third of everything humanity produces. If food waste were a country, it would be the third-largest CO₂ emitter after China and the US.</p>
         <svg class="leaf-art" viewBox="0 0 200 200" fill="none">
           <path d="M 30 170 C 60 100 110 60 180 30 C 160 110 110 160 40 170 C 30 140 60 100 130 80" stroke="#E8A434" stroke-width="2.5" stroke-linecap="round"/>
         </svg>
       </div>
       <div class="impact-card reveal">
-        <h4>Воды сэкономлено</h4>
-        <div class="impact-bignum">2.4M<span class="small"> литров</span></div>
+        <h4>Water saved</h4>
+        <div class="impact-bignum">2.4M<span class="small"> litres</span></div>
       </div>
       <div class="impact-card reveal">
-        <h4>Энергии сэкономлено</h4>
-        <div class="impact-bignum">580k<span class="small"> кВт·ч</span></div>
+        <h4>Energy saved</h4>
+        <div class="impact-bignum">580k<span class="small"> kWh</span></div>
       </div>
       <div class="impact-card reveal">
-        <h4>Дней до углеродной нейтральности</h4>
-        <div class="impact-bignum">147<span class="small"> дн.</span></div>
+        <h4>Days to carbon neutrality</h4>
+        <div class="impact-bignum">147<span class="small"> days</span></div>
       </div>
       <div class="impact-card reveal">
-        <h4>Активных городов</h4>
-        <div class="impact-bignum">23<span class="small"> города</span></div>
+        <h4>Active cities</h4>
+        <div class="impact-bignum">23<span class="small"> cities</span></div>
       </div>
     </div>
   </div>
@@ -1322,33 +1322,33 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <h4>EcoFood Share</h4>
-      <p>Open-source платформа против пищевых отходов. Сделано волонтёрами, поддерживается сообществом. Лицензия MIT — форкай, развивай, запускай у себя в городе.</p>
+      <p>Open-source platform against food waste. Built by volunteers, supported by community. MIT licensed — fork, improve, launch in your city.</p>
     </div>
     <div>
-      <h5>Платформа</h5>
+      <h5>Platform</h5>
       <ul>
-        <li><a href="#available">Найти еду</a></li>
-        <li><a href="#share">Поделиться</a></li>
-        <li><a href="#map">Карта</a></li>
-        <li><a href="#impact">Статистика</a></li>
+        <li><a href="#available">Find food</a></li>
+        <li><a href="#share">Share</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#impact">Statistics</a></li>
       </ul>
     </div>
     <div>
-      <h5>Сообществу</h5>
+      <h5>Community</h5>
       <ul>
-        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Стать волонтёром</a></li>
-        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Подключить кафе</a></li>
-        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Telegram-канал</a></li>
-        <li><a href="#" onclick="event.preventDefault();showToast('Скоро откроется!')">Документация</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Coming soon!')">Become a volunteer</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Coming soon!')">Connect a café</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Coming soon!')">Telegram channel</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Coming soon!')">Documentation</a></li>
       </ul>
     </div>
     <div>
       <h5>Open-source</h5>
       <ul>
-        <li><a href="#" onclick="event.preventDefault();showToast('Замени ссылку на свой репозиторий')">GitHub</a></li>
-        <li><a href="#" onclick="event.preventDefault();showToast('Скоро')">Contributing</a></li>
-        <li><a href="#" onclick="event.preventDefault();showToast('MIT License')">Лицензия</a></li>
-        <li><a href="#" onclick="event.preventDefault();showToast('Скоро')">API</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Replace this link with your repository')">GitHub</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Coming soon')">Contributing</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('MIT License')">License</a></li>
+        <li><a href="#" onclick="event.preventDefault();showToast('Coming soon')">API</a></li>
       </ul>
     </div>
   </div>
@@ -1370,21 +1370,21 @@
 </div>
 
 <!-- ============= TOAST ============= -->
-<div class="toast" id="toast">Опубликовано</div>
+<div class="toast" id="toast">Published</div>
 
 <script>
 /* ============= DATA ============= */
 const sampleListings = [
-  { id: 1, title: 'Свежий хлеб 4 буханки', from: 'Пекарня «Колосок»', category: 'bakery', portions: 4, district: 'Алмалинский', until: '21:00', urgent: true, free: true, notes: 'Закваска ржаная, испечён утром. Заберёте — отдадим бесплатно, главное чтобы не выкинуть.', emoji: '🥖', color: '#E8A434' },
-  { id: 2, title: 'Паста карбонара, 6 порций', from: 'Кафе Veranda', category: 'meals', portions: 6, district: 'Медеуский', until: '19:30', urgent: false, free: false, notes: 'После бизнес-ланча. Упаковано в контейнеры, в холодильнике. 200 тенге за упаковку.', emoji: '🍝', color: '#D7572C' },
-  { id: 3, title: 'Ящик помидоров черри', from: 'Магазин «Свежее»', category: 'produce', portions: 8, district: 'Бостандыкский', until: '22:00', urgent: false, free: true, notes: 'Подходит срок реализации, но качество отличное. Отдадим первому, кто заберёт.', emoji: '🍅', color: '#D7572C' },
-  { id: 4, title: 'Круассаны и булочки, 12 шт', from: 'Кофейня Drip', category: 'bakery', portions: 12, district: 'Алмалинский', until: '20:00', urgent: true, free: true, notes: 'Дневная выпечка. Вкусные, но завтра уже не продадим. Приходите!', emoji: '🥐', color: '#E8A434' },
-  { id: 5, title: 'Борщ домашний, кастрюля', from: 'Анна (частное лицо)', category: 'meals', portions: 5, district: 'Ауэзовский', until: '23:00', urgent: false, free: true, notes: 'Сварила слишком много на семью. Свежий, сегодняшний. Принесите свой контейнер.', emoji: '🍲', color: '#1F4031' },
-  { id: 6, title: '2 пиццы (пеперони, маргарита)', from: 'Ресторан Mira', category: 'meals', portions: 8, district: 'Медеуский', until: '22:30', urgent: true, free: false, notes: 'Закрываемся, остались две целые пиццы. 500 тенге каждая или забирайте обе за 800.', emoji: '🍕', color: '#D7572C' },
-  { id: 7, title: 'Йогурты натуральные, 8 шт', from: 'Лавка «Молочник»', category: 'dairy', portions: 8, district: 'Алмалинский', until: '20:30', urgent: true, free: true, notes: 'Срок до завтра, без сахара, разные вкусы. Просто заходите и забирайте.', emoji: '🥛', color: '#B8C9A8' },
-  { id: 8, title: 'Киноа и гречка, по 1кг', from: 'Зерновая лавка', category: 'produce', portions: 6, district: 'Бостандыкский', until: 'завтра', urgent: false, free: false, notes: 'Открытые мешки, нужно реализовать. По 300 тенге за кг — символически.', emoji: '🌾', color: '#E8A434' },
-  { id: 9, title: 'Тако с курицей, 4 порции', from: 'Foodtruck Tacos', category: 'meals', portions: 4, district: 'Алмалинский', until: '18:30', urgent: true, free: true, notes: 'Свежеприготовленные, остались после обеденного потока. Только что собрали.', emoji: '🌮', color: '#1F4031' },
-  { id: 10, title: 'Творог фермерский, 2 кг', from: 'Anna Farm', category: 'dairy', portions: 8, district: 'Ауэзовский', until: '21:00', urgent: false, free: false, notes: 'Сделан вчера. 600 тенге за кг. Идеально для запеканки или сырников.', emoji: '🧀', color: '#B8C9A8' },
+  { id: 1, title: 'Fresh bread, 4 loaves', from: 'Kolosok Bakery', category: 'bakery', portions: 4, district: 'Almaly', until: '21:00', urgent: true, free: true, notes: 'Rye sourdough, baked this morning. Pick it up and it is yours — free, just so it does not go to waste.', emoji: '🥖', color: '#E8A434' },
+  { id: 2, title: 'Pasta carbonara, 6 portions', from: 'Café Veranda', category: 'meals', portions: 6, district: 'Medeu', until: '19:30', urgent: false, free: false, notes: 'Leftover from business lunch. Packed in containers, in the fridge. 200 KZT per pack.', emoji: '🍝', color: '#D7572C' },
+  { id: 3, title: 'Crate of cherry tomatoes', from: 'Fresh Market', category: 'produce', portions: 8, district: 'Bostandyk', until: '22:00', urgent: false, free: true, notes: 'Sell-by date approaching, quality is great. First come, first served.', emoji: '🍅', color: '#D7572C' },
+  { id: 4, title: 'Croissants &amp; buns, 12 pcs', from: 'Drip Coffee', category: 'bakery', portions: 12, district: 'Almaly', until: '20:00', urgent: true, free: true, notes: 'Today's pastries. Delicious, but we cannot sell them tomorrow. Come grab some!', emoji: '🥐', color: '#E8A434' },
+  { id: 5, title: 'Homemade borscht, pot', from: 'Anna (private person)', category: 'meals', portions: 5, district: 'Auezov', until: '23:00', urgent: false, free: true, notes: 'Cooked too much for the family. Fresh, made today. Bring your own container.', emoji: '🍲', color: '#1F4031' },
+  { id: 6, title: '2 pizzas (pepperoni, margherita)', from: 'Mira Restaurant', category: 'meals', portions: 8, district: 'Medeu', until: '22:30', urgent: true, free: false, notes: 'We are closing, two full pizzas left. 500 KZT each or both for 800.', emoji: '🍕', color: '#D7572C' },
+  { id: 7, title: 'Natural yoghurts, 8 pcs', from: 'Milkman Shop', category: 'dairy', portions: 8, district: 'Almaly', until: '20:30', urgent: true, free: true, notes: 'Best before tomorrow, no sugar, mixed flavours. Just drop by and pick up.', emoji: '🥛', color: '#B8C9A8' },
+  { id: 8, title: 'Quinoa and buckwheat, 1kg each', from: 'Grain Shop', category: 'produce', portions: 6, district: 'Bostandyk', until: 'tomorrow', urgent: false, free: false, notes: 'Open bags, need to clear out. 300 KZT per kg — symbolic price.', emoji: '🌾', color: '#E8A434' },
+  { id: 9, title: 'Chicken tacos, 4 portions', from: 'Foodtruck Tacos', category: 'meals', portions: 4, district: 'Almaly', until: '18:30', urgent: true, free: true, notes: 'Freshly made, left over from the lunch rush. Just assembled.', emoji: '🌮', color: '#1F4031' },
+  { id: 10, title: 'Farm cottage cheese, 2 kg', from: 'Anna Farm', category: 'dairy', portions: 8, district: 'Auezov', until: '21:00', urgent: false, free: false, notes: 'Made yesterday. 600 KZT per kg. Perfect for casserole or syrniki.', emoji: '🧀', color: '#B8C9A8' },
 ];
 
 let listings = JSON.parse(localStorage.getItem('ecofood-listings') || 'null') || [...sampleListings];
@@ -1429,8 +1429,8 @@ function renderListings() {
 
   if (filtered.length === 0) {
     container.innerHTML = `<div class="empty-state">
-      Пока ничего не нашлось. Попробуй другой фильтр — или
-      <a href="#share" style="color:var(--terracotta);text-decoration:underline">поделись сам</a>.
+      Nothing found. Try a different filter — or
+      <a href="#share" style="color:var(--terracotta);text-decoration:underline">share something yourself</a>.
     </div>`;
     return;
   }
@@ -1438,14 +1438,14 @@ function renderListings() {
   container.innerHTML = filtered.map(l => `
     <div class="card" onclick="openModal(${l.id})">
       <div class="card-img">${makeFoodIllustration(l.emoji, l.color)}
-        ${l.urgent ? '<span class="card-tag urgent">Срочно</span>' : (l.free ? '<span class="card-tag free">Бесплатно</span>' : '<span class="card-tag">Символично</span>')}
+        ${l.urgent ? '<span class="card-tag urgent">Urgent</span>' : (l.free ? '<span class="card-tag free">Free</span>' : '<span class="card-tag">Token price</span>')}
       </div>
       <div class="card-body">
         <h3>${l.title}</h3>
         <div class="card-from">${l.from} · ${l.district}</div>
         <div class="card-meta">
           <span class="portions">${l.portions} ${pluralPortions(l.portions)}</span>
-          <span>до ${l.until}</span>
+          <span>until ${l.until}</span>
           <span class="arrow">→</span>
         </div>
       </div>
@@ -1455,10 +1455,7 @@ function renderListings() {
 
 function pluralPortions(n) {
   const mod10 = n % 10, mod100 = n % 100;
-  if (mod100 >= 11 && mod100 <= 19) return 'порций';
-  if (mod10 === 1) return 'порция';
-  if (mod10 >= 2 && mod10 <= 4) return 'порции';
-  return 'порций';
+  return n === 1 ? 'portion' : 'portions';
 }
 
 /* ============= FILTERS ============= */
@@ -1481,25 +1478,25 @@ function openModal(id) {
   const l = listings.find(x => x.id === id);
   if (!l) return;
   document.getElementById('modal-img').innerHTML = makeFoodIllustration(l.emoji, l.color);
-  const cats = { bakery: 'Хлеб и выпечка', meals: 'Готовые блюда', produce: 'Овощи и фрукты', dairy: 'Молочка' };
+  const cats = { bakery: 'Bread & pastries', meals: 'Prepared meals', produce: 'Produce', dairy: 'Dairy' };
   document.getElementById('modal-body').innerHTML = `
     <div class="tag-row">
-      ${l.urgent ? '<span class="card-tag urgent">Срочно</span>' : ''}
-      <span class="card-tag ${l.free ? 'free' : ''}">${l.free ? 'Бесплатно' : 'Символическая цена'}</span>
+      ${l.urgent ? '<span class="card-tag urgent">Urgent</span>' : ''}
+      <span class="card-tag ${l.free ? 'free' : ''}">${l.free ? 'Free' : 'Token price'}</span>
       <span class="card-tag">${cats[l.category] || ''}</span>
     </div>
     <h2>${l.title}</h2>
     <div class="from">${l.from}</div>
     <p class="desc">${l.notes}</p>
     <ul class="info-list">
-      <li><span>Район</span><span>${l.district}</span></li>
-      <li><span>Порций</span><span>${l.portions}</span></li>
-      <li><span>Забрать до</span><span>${l.until}</span></li>
-      <li><span>Тип</span><span>${cats[l.category]}</span></li>
+      <li><span>District</span><span>${l.district}</span></li>
+      <li><span>Portions</span><span>${l.portions}</span></li>
+      <li><span>Pick up by</span><span>${l.until}</span></li>
+      <li><span>Type</span><span>${cats[l.category]}</span></li>
     </ul>
     <div class="modal-actions">
-      <button class="btn btn-primary" onclick="reserveListing(${l.id})">Забронировать</button>
-      <button class="btn btn-secondary" onclick="closeModal()">Подумать</button>
+      <button class="btn btn-primary" onclick="reserveListing(${l.id})">Reserve</button>
+      <button class="btn btn-secondary" onclick="closeModal()">Think about it</button>
     </div>
   `;
   document.getElementById('modal').classList.add('open');
@@ -1519,7 +1516,7 @@ document.addEventListener('keydown', e => {
 function reserveListing(id) {
   const l = listings.find(x => x.id === id);
   closeModal();
-  showToast(`Забронировано: ${l.title}`);
+  showToast(`Reserved: ${l.title}`);
 }
 
 /* ============= TOAST ============= */
@@ -1541,7 +1538,7 @@ document.getElementById('share-form').addEventListener('submit', e => {
     portions: parseInt(document.getElementById('portions').value),
     district: document.getElementById('district').value,
     until: document.getElementById('until').value,
-    notes: document.getElementById('notes').value || 'Подробности уточняй у автора объявления.',
+    notes: document.getElementById('notes').value || 'Ask the author for details.',
     urgent: false,
     free: true,
     emoji: getEmojiByCategory(document.getElementById('category').value),
@@ -1553,7 +1550,7 @@ document.getElementById('share-form').addEventListener('submit', e => {
   e.target.reset();
   document.getElementById('portions').value = 2;
   document.getElementById('until').value = '20:00';
-  showToast('Опубликовано! Объявление в ленте.');
+  showToast('Published! Listing is in the feed.');
   document.getElementById('available').scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -1575,7 +1572,7 @@ function animateCounters() {
     const t = setInterval(() => {
       current += inc;
       if (current >= target) { current = target; clearInterval(t); }
-      el.innerHTML = current.toLocaleString('ru-RU') + unitHTML;
+      el.innerHTML = current.toLocaleString('en-US') + unitHTML;
     }, 28);
   });
 }
@@ -1599,7 +1596,7 @@ document.querySelectorAll('.map-pin').forEach(pin => {
     tooltip.style.opacity = '0';
   });
   pin.addEventListener('click', () => {
-    showToast(`Открываем «${pin.dataset.name}»...`);
+    showToast(`Opening ${pin.dataset.name}...`);
   });
 });
 
