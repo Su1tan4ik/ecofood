@@ -10,7 +10,7 @@
     "lint:html": "html-validate index.html src/index.html"
   },
   "devDependencies": {
-    "html-validate": "^8.18.2",
+    "html-validate": "^11.5.5",
     "prettier": "^3.3.3",
     "serve": "^14.2.4"
   },
